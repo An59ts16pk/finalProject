@@ -1,0 +1,145 @@
+.articles {
+    min-height: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__heading {
+        padding-top: 40px;
+        color: $colorTextDarkGreen;
+    }
+
+    &__blok {
+        width: 1280px;
+        padding: 40px 10px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    &__box {
+        height: 540px;
+        width: 340px;
+        border: 1px solid grey;
+        box-sizing: border-box;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.21);
+        transition: all 0.6s ease-out;
+
+        &:hover {
+            background-color: $backgroundLightGreenBox;
+            transition: all 0.6s ease-out;
+        }
+
+        &:hover .articles__link {
+            background-color: $backgroundMain;
+            transition: all 0.6s ease-out;
+        }
+    }
+
+    &__imgbox {
+        width: 296px;
+        height: 320px;
+        margin-top: 18px;
+        border: 1px solid grey;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    &__content {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        width: 300px;
+        height: 70px;
+        padding: 0 10px 10px;
+    }
+
+    &__txt {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__text {
+        width: 240px;
+        padding: 0 0 10px 10px;
+    }
+
+    &__link {
+        margin-top: 20px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: $backgroundLightGreenBox;
+    }
+
+    &__buttons {
+        padding-top: 10px;
+        padding-bottom: 40px;
+        display: flex;
+        gap: 20px;
+    }
+
+    &__button {
+        width: 180px;
+        height: 30px;
+        font-size: 18px;
+        background-color: $backgroundLightGreenBox;
+        border: 1px solid $backgroundLightGreenBox;
+        border-radius: 3px;
+        transition: all 0.6s ease-out;
+
+        &:hover {
+            background-color: $backgroundDarkGreen;
+            color: $colorTextWhite;
+            transition: all 0.6s ease-out;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__number {
+        width: 30px;
+        height: 30px;
+        border: 1px solid gray;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .articles {
+        &__button {
+            width: 120px;
+        }
+
+        &__cards {
+            padding-top: 5px;
+            gap: 5px;
+        }
+
+        &__number {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

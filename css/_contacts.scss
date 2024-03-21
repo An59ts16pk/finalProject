@@ -1,0 +1,153 @@
+.contacts {
+    min-height: 580px;
+    
+    &__box {
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        padding: 40px;
+        color: $colorTextDarkGreen;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 800;
+    }
+
+    &__heading {
+        padding: 20px;
+        color: $colorTextDarkGreen;
+        text-align: center;
+    }
+
+    &__left {
+        padding: 0 20px;
+    }
+
+    &__li {
+        padding-bottom: 5px;
+    }
+
+    &__link {
+        color: $backgroundDarkGreen;
+
+        &:hover {
+            color: $colorLinkHoverLightGreen;
+        }
+    }
+
+    &__right {
+        //max-width: 700px;
+        max-width: 700px;
+        padding: 0 20px;
+    }
+
+    &__blok {
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+    }
+
+    &__label {
+        color: $colorTextDarkGreen;
+    }
+
+    &__input {
+        width: 600px;
+        height: 40px;
+        padding-left: 10px;
+        border-radius: 5px;
+        border: 1px solid $backgroundDarkGreen;
+        
+        &::placeholder {
+            color: $colorLinkHoverLightGreen;
+        }
+    }
+
+    &__btn {
+        margin-top: 5px;
+        width: 150px;
+        height: 40px;
+        background: $backgroundLightGreenBox;
+        border: 1px solid $backgroundDarkGreen;
+        border-radius: 5px;
+        box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.21);
+        transition: all 0.6s ease-out;
+
+        &:hover {
+            color: $colorTextWhite;
+            background: $colorLinkDarkGreen;
+            transition: all 0.6s ease-out;
+        }
+
+    }
+}
+
+.certificates {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__images {
+        max-width: 1280px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        text-align: center;
+        color: $colorTextDarkGreen;
+    }
+
+    &__img {
+        max-width: 280px;
+        padding: 20px;
+    }
+}
+
+.yandexmap {
+    &__title {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    &__link {
+        color: $colorTextDarkGreen;
+        box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.21);
+        transition: all 0.6s ease-out;
+
+        &:hover {
+            color: $colorLinkHoverViolet;
+            transition: all 0.6s ease-out;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        &__input {
+            max-width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 474px) {
+    .contacts {
+        &__input {
+            max-width: 300px;
+        }
+    }
+}

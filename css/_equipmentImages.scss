@@ -1,0 +1,14 @@
+.equipmentImages {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+
+    &__box {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}

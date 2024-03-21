@@ -1,0 +1,49 @@
+.top {
+    max-height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    &__content {
+        max-width: 500px;
+        position: absolute;
+        padding-left: 20px;
+        background: $backgroundMain;
+        border-radius: 5px;
+    }
+
+    &__title {
+        color: $colorTextDarkGreen;
+    }
+
+    &__text {
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #toptextS1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        &__content {
+            margin-bottom: 80px;
+            max-width: 300px;
+        }
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+
+    #toptextS {
+        display: none;
+    }
+}

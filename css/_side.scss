@@ -1,0 +1,30 @@
+.side {
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    &__top, &__bottom {
+        max-width: 1140px;
+        padding: 0 10px;
+    }
+
+    &__ul {
+        max-width: 900px;
+    }
+
+    &__text, &__li {
+        padding: 10px 0;
+    }
+
+    &__title {
+        padding: 20px 0;
+        color: $colorTextDarkGreen;
+        text-align: center;
+    }
+
+    &__heading {
+        color: $colorTextDarkGreen;
+    }
+}

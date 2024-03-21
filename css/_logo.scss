@@ -1,0 +1,12 @@
+.logo {
+    width: 150px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: $backgroundLightGreen;
+    transition: all 0.6s ease-out;
+
+    &:hover {
+        background-color: $colorLinkHoverViolet;
+        transition: all 0.6s ease-out;
+    }
+}

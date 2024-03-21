@@ -1,0 +1,225 @@
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+        
+    &__heading {
+        margin-top: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: $backgroundLightGreen;
+        border-radius: 5px;
+        color: white;
+        position: absolute;
+    }
+}
+
+.company {
+    min-height: 600px;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        max-width: 1200px;
+        background-color: $backgroundLightGreyBox;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__blok {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    &__box {
+        padding: 10px 10px;
+        max-width: 500px;
+        min-height: 200px;
+        display: flex;
+        gap: 40px;
+    }
+
+    &__img {
+        padding-top: 10px;
+    }
+
+    &__titleH1 {
+        padding-bottom: 40px;
+        color: $colorTextDarkGreen;
+    }
+
+    &__titleH4 {
+        padding-bottom: 20px;
+    }
+
+    &__text {
+        max-width: 500px;
+        padding-right: 5px;
+    }
+}
+
+.manufacturers {
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        padding: 0 20px 40px;
+        color: $colorTextDarkGreen;
+    }
+
+    &__imgbox {
+        max-width: 1000px;
+        background: $backgroundLightGreyBox;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+
+    &__img {
+        max-width: 300px;
+    }
+}
+
+.projects {
+    
+    &__container {
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    &__title {
+        color: $colorTextDarkGreen;
+    }
+
+    &__slaider {
+        max-width: 752px;
+        border: 1px solid $backgroundLightGreen;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background: $backgroundLightGreyBox;
+        box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.21);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__img {
+        max-height: 375px;
+        border-radius: 5px;
+    }
+
+    &__heading {
+        padding: 0 25px;
+        height: 55px;
+    }
+
+    &__pagination {
+        height: 25px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        &__circle {
+            height: 20px;
+            width: 20px;
+            border: 2px solid rgb(177, 175, 175);
+            border-radius: 50%;
+            background-color: $backgroundLightGreenBox;
+
+            &:hover {
+                background-color: $colorLinkHoverViolet;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__button {
+        width: 140px;
+        height: 30px;
+        font-size: 18px;
+        background-color: $backgroundLightGreenBox;
+        border: 1px solid $backgroundLightGreenBox;
+        border-radius: 3px;
+        transition: all 0.6s ease-out;
+
+        &:hover {
+            background-color: $backgroundDarkGreen;
+            color: $colorTextWhite;
+            transition: all 0.6s ease-out;
+        }
+    }
+}
+
+.active {
+    background-color: $colorLinkHoverViolet;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        &__heading {
+            font-size: 18px;
+        }
+    }
+
+    .company {
+        &__titleH1 {
+            font-size: 18px;
+        }
+    }
+
+    .manufacturers {
+        &__title {
+            font-size: 18px; 
+        }
+    }
+
+    .projects {
+        &__pagination {
+            &__circle {
+                height: 15px;
+                width: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .projects {
+        &__pagination {
+            &__circle {
+                height: 8px;
+                width: 8px;
+            }
+        }
+    }
+}

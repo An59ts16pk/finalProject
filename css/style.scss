@@ -1,0 +1,54 @@
+@import 'vars';
+@import 'mixins';
+@import 'mobile-menu';
+@import 'header';
+@import 'footer';
+@import 'logo';
+@import 'index';
+@import 'services';
+@import 'equipment';
+@import 'top';
+@import 'side';
+@import 'equipmentImages';
+@import 'contacts';
+@import 'articles';
+@import 'articlesdetails';
+
+html {
+    background: $backgroundMain;
+    font-size: 16px;
+}
+
+.center {
+    padding-left: calc(50% - $screenWidth / 2);
+    padding-right: calc(50% - $screenWidth / 2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.hdr {
+    position: relative;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    }
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+

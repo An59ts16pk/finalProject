@@ -1,0 +1,134 @@
+.services {
+        
+    &__container {
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        padding-bottom: 40px;
+        color: $colorTextDarkGreen;
+    }
+
+    &__blok {
+        max-width: 1180px;
+        min-height: 540px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    &__box  {
+        max-width: 458px;
+        min-height: 550px;
+        border: 1px solid $backgroundDarkGreen;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.21);
+        transition: all 0.6s ease-out;
+
+        &:hover {
+            background-color: $backgroundLightGreenBox;
+            transition: all 0.6s ease-out;
+        }
+
+        &:hover .services__link {
+            background-color: $backgroundMain;
+            transition: all 0.6s ease-out;
+        }
+    }
+
+    &__img {
+        max-width: 300px;
+        max-height: 397px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__image {
+        margin-top: 10px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    &__content {
+        padding: 20px;
+        min-height: 100px;
+        display: flex;
+    }
+
+    &__txt {
+        max-width: 320px;
+        padding-right: 5px;
+    }
+
+    &__titleH4{
+        padding-bottom: 5px;
+    }
+
+    &__link {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: $backgroundLightGreenBox;
+    }
+
+    &__pagination {
+        height: 25px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        &__circle {
+            height: 20px;
+            width: 20px;
+            border: 2px solid rgb(177, 175, 175);
+            border-radius: 50%;
+            background-color: $backgroundLightGreenBox;
+
+            &:hover {
+                background-color: $colorLinkHoverViolet;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__button {
+        width: 180px;
+        height: 30px;
+        font-size: 18px;
+        background-color: $backgroundLightGreenBox;
+        border: 1px solid $backgroundLightGreenBox;
+        border-radius: 3px;
+        transition: all 0.6s ease-out;
+
+        &:hover {
+            background-color: $backgroundDarkGreen;
+            color: $colorTextWhite;
+            transition: all 0.6s ease-out;
+        }
+    }
+}
+
+.active {
+    background-color: $colorLinkHoverViolet;
+}

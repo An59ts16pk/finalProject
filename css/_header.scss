@@ -1,0 +1,70 @@
+.header {
+    max-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__box {
+        width: $screenWidth;
+        background-color: $backgroundLightGreenBox;
+    }
+
+    &__menu {
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__navlink {
+        height: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: $backgroundMain;
+        color: $colorTextBlack;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        transition: all 0.6s ease-out;
+
+        &:hover {
+            color: $colorTextWhite;
+            background-color: $backgroundLightGreen;
+            transition: all 0.6s ease-out;
+        } 
+    }
+
+    &__svg {
+        display: block;
+        transition: all 0.6s ease-out;
+
+        &:hover path {
+            fill: $colorLinkHoverViolet;
+            transition: all 0.6s ease-out;
+        }
+    }
+
+    &__checkbox {
+        position: absolute;
+        visibility: hidden;
+        left: -9999999px;
+    }
+
+    &__checkbox:checked~.mobile-menu {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        &__navlink {
+            display: none;
+        }
+    }
+}
