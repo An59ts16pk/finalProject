@@ -16,7 +16,7 @@ const articles = [
     {
         id: "ad_2",
         src: "img/articles/wee320.jpg",
-        title: "3. World Elevator <span>&</span> Escalator Expo 202",
+        title: "3. World Elevator & Escalator Expo 202",
         text: "WEE Expo - это крупнейшая международная выставка лифтов и эскалаторов",
     },
     {
